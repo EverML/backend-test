@@ -30,7 +30,8 @@ module.exports = {
           "events.title",
           "events.description",
           "events.eventImage",
-          "events.location")
+          "events.location",
+          "events.featured")
         .first();
 
 
@@ -85,6 +86,19 @@ module.exports = {
 
     return response.status(204).send();
   },
+  async featured(request,response){
+    const { page = 1 } = request.query;
+
+    const [count] = await connection("events").count();
+
+
+    const events = await getFeaturedEvents(page);
+
+
+    response.header("X-Total-Count", count["count(*)"]);
+
+    return response.json(events);
+  }
 };
 
 async function getDatesForEachEvent(event)
@@ -101,6 +115,22 @@ async function getEvents(page)
   return await connection("events")
   .limit(10)
   .offset((page - 1) * 10)
+  .select(
+    "events.id",
+    "events.title",
+    "events.description",
+    "events.eventImage",
+    "events.location",
+    "events.featured"
+  )
+}
+
+async function getFeaturedEvents(page)
+{
+  return await connection("events")
+  .limit(10)
+  .offset((page - 1) * 10)
+  .where({featured:1})
   .select(
     "events.id",
     "events.title",

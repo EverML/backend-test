@@ -6,6 +6,7 @@ exports.up = function(knex) {
       table.string('eventImage').notNullable();
       table.string('description').notNullable();
       table.string('location').notNullable();
+      table.boolean('featured').defaultTo('false');
   })
 };
 
