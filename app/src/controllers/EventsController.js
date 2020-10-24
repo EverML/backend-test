@@ -40,8 +40,8 @@ module.exports = {
       const dates = await getDatesForEachEvent(event);
       return response.json(dates);
     }
-    else
-      return response.status(404).send();
+    
+    return response.status(404).send();
   },
   async create(request, response) {
     
@@ -96,7 +96,6 @@ async function getDatesForEachEvent(event)
     return {...event,dates}
 }
 
-
 async function getEvents(page)
 {
   return await connection("events")
@@ -110,8 +109,6 @@ async function getEvents(page)
     "events.location"
   )
 }
-
-
 
 async function getEventsWithDatesJoin(page) {
   return await connection("events")
