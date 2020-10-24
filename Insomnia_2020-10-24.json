@@ -7,11 +7,91 @@
 		},
 		"entries": [
 			{
-				"startedDateTime": "2020-10-24T13:55:27.637Z",
-				"time": 17.938,
+				"startedDateTime": "2020-10-24T16:06:45.251Z",
+				"time": 26.393,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:3333/login",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"email\":\"admin@admin.com\",\n\t\"password\":\"admin\"\n}",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "192"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"c0-x1CsIlfJNJ7W1h4yM92ZA29aHsY\""
+						},
+						{
+							"name": "Date",
+							"value": "Sat, 24 Oct 2020 15:20:08 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"content": {
+						"size": 192,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"accesToken\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJwYXNzd29yZCI6ImFkbWluIiwiaWF0IjoxNjAzNTUyODA4fQ.ohyw-NaEpzFAYj8mPyH7L_DfV7OWXVn90YdS5wy7ZIY\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 26.393,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "login"
+			},
+			{
+				"startedDateTime": "2020-10-24T16:06:45.251Z",
+				"time": 3.42,
 				"request": {
 					"method": "GET",
-					"url": "http://localhost:3333/events?page=1",
+					"url": "http://localhost:3333/events?page=2",
 					"httpVersion": "HTTP/1.1",
 					"cookies": [],
 					"headers": [],
@@ -41,7 +121,7 @@
 						},
 						{
 							"name": "X-Total-Count",
-							"value": "3"
+							"value": "11"
 						},
 						{
 							"name": "Content-Type",
@@ -49,15 +129,15 @@
 						},
 						{
 							"name": "Content-Length",
-							"value": "2579"
+							"value": "1074"
 						},
 						{
 							"name": "ETag",
-							"value": "W/\"a13-ntbg4vuNR1iyCAR+K7PUz8E+20E\""
+							"value": "W/\"432-PtzpBcYkiK3myXMHpPLS+pKPt1A\""
 						},
 						{
 							"name": "Date",
-							"value": "Sat, 24 Oct 2020 13:35:51 GMT"
+							"value": "Sat, 24 Oct 2020 15:21:42 GMT"
 						},
 						{
 							"name": "Connection",
@@ -65,9 +145,9 @@
 						}
 					],
 					"content": {
-						"size": 2579,
+						"size": 1074,
 						"mimeType": "application/json; charset=utf-8",
-						"text": "[{\"id\":1,\"title\":\"24 Festival de Cine para Niños y Jóvenes – Divercine\",\"description\":\"Del lunes 27 de julio al sábado 1º de agosto se desarrolla en el Auditorio del SODRE Nelly Goitiño (18 de Julio y Rio Branco) el 24 Festival de Cine para Niños y Jóvenes - Divercine. La programación, que incluye películas de largo, medio y cortometraje de varias partes del mundo, está dividida en tres franjas de horarios cada día, de acuerdo a las edades del público a las que van dirigidas: a las 13 horas a partir de 3 años de edad; a las 14 horas a partir de los 6 años de edad; y desde las 15 se programan los medio y largometrajes para niños más grandes y adolescentes.\",\"eventImage\":\"http://www.cartelera.com.uy/imagenes_espectaculos/moviedetail13/17511.jpg\",\"location\":\"Auditorio del SODRE\",\"featured\":1,\"dates\":[{\"event_date\":\"22/10/2020\",\"event_time\":\"18:30\"},{\"event_date\":\"23/10/2020\",\"event_time\":\"19:30\"},{\"event_date\":\"24/10/2020\",\"event_time\":\"17:30\"}]},{\"id\":2,\"title\":\"24 Festival de Cine para Niños y Jóvenes – Divercine\",\"description\":\"Del lunes 27 de julio al sábado 1º de agosto se desarrolla en el Auditorio del SODRE Nelly Goitiño (18 de Julio y Rio Branco) el 24 Festival de Cine para Niños y Jóvenes - Divercine. La programación, que incluye películas de largo, medio y cortometraje de varias partes del mundo, está dividida en tres franjas de horarios cada día, de acuerdo a las edades del público a las que van dirigidas: a las 13 horas a partir de 3 años de edad; a las 14 horas a partir de los 6 años de edad; y desde las 15 se programan los medio y largometrajes para niños más grandes y adolescentes.\",\"eventImage\":\"http://www.cartelera.com.uy/imagenes_espectaculos/moviedetail13/17511.jpg\",\"location\":\"Auditorio del SODRE\",\"featured\":\"false\",\"dates\":[{\"event_date\":\"02/10/2020\",\"event_time\":\"18:30\"},{\"event_date\":\"03/10/2020\",\"event_time\":\"19:30\"},{\"event_date\":\"04/10/2020\",\"event_time\":\"17:30\"}]},{\"id\":3,\"title\":\"Otro evento Random\",\"description\":\"Esta es una decripcion onda Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas ipsum amet, perspiciatis provident perferendis pariatur totam, veritatis reiciendis voluptates blanditiis temporibus recusandae quos unde eaque dolorum ut adipisci doloribus modi.\",\"eventImage\":\"http://www.cartelera.com.uy/imagenes_espectaculos/moviedetail13/17511.jpg\",\"location\":\"Lado de la Republica\",\"featured\":1,\"dates\":[{\"event_date\":\"12/10/2020\",\"event_time\":\"18:30\"},{\"event_date\":\"13/10/2020\",\"event_time\":\"19:30\"},{\"event_date\":\"14/10/2020\",\"event_time\":\"17:30\"}]}]"
+						"text": "[{\"id\":12,\"title\":\"24 Festival de Cine para Niños y Jóvenes – Divercine\",\"description\":\"Del lunes 27 de julio al sábado 1º de agosto se desarrolla en el Auditorio del SODRE Nelly Goitiño (18 de Julio y Rio Branco) el 24 Festival de Cine para Niños y Jóvenes - Divercine. La programación, que incluye películas de largo, medio y cortometraje de varias partes del mundo, está dividida en tres franjas de horarios cada día, de acuerdo a las edades del público a las que van dirigidas: a las 13 horas a partir de 3 años de edad; a las 14 horas a partir de los 6 años de edad; y desde las 15 se programan los medio y largometrajes para niños más grandes y adolescentes.\",\"eventImage\":\"http://www.cartelera.com.uy/imagenes_espectaculos/moviedetail13/17511.jpg\",\"location\":\"Auditorio del SODRE\",\"featured\":0,\"dates\":[{\"event_date\":\"07/27/2015\",\"event_time\":\"13:00\"},{\"event_date\":\"07/28/2015\",\"event_time\":\"13:00\"},{\"event_date\":\"07/29/2015\",\"event_time\":\"13:00\"},{\"event_date\":\"07/30/2015\",\"event_time\":\"13:00\"},{\"event_date\":\"07/1/2015\",\"event_time\":\"13:00\"}]}]"
 					},
 					"redirectURL": "",
 					"headersSize": -1,
@@ -79,15 +159,15 @@
 					"dns": -1,
 					"connect": -1,
 					"send": 0,
-					"wait": 17.938,
+					"wait": 3.42,
 					"receive": 0,
 					"ssl": -1
 				},
 				"comment": "GET EVENTS"
 			},
 			{
-				"startedDateTime": "2020-10-24T13:55:27.637Z",
-				"time": 16.299999999999997,
+				"startedDateTime": "2020-10-24T16:06:45.251Z",
+				"time": 4.68,
 				"request": {
 					"method": "GET",
 					"url": "http://localhost:3333/events/featured",
@@ -120,7 +200,7 @@
 						},
 						{
 							"name": "X-Total-Count",
-							"value": "4"
+							"value": "7"
 						},
 						{
 							"name": "Content-Type",
@@ -136,7 +216,7 @@
 						},
 						{
 							"name": "Date",
-							"value": "Sat, 24 Oct 2020 13:54:37 GMT"
+							"value": "Sat, 24 Oct 2020 15:21:16 GMT"
 						},
 						{
 							"name": "Connection",
@@ -158,15 +238,15 @@
 					"dns": -1,
 					"connect": -1,
 					"send": 0,
-					"wait": 16.299999999999997,
+					"wait": 4.68,
 					"receive": 0,
 					"ssl": -1
 				},
 				"comment": "GET FEATURED EVENTS"
 			},
 			{
-				"startedDateTime": "2020-10-24T13:55:27.637Z",
-				"time": 3.7239999999999998,
+				"startedDateTime": "2020-10-24T16:06:45.251Z",
+				"time": 3.359,
 				"request": {
 					"method": "GET",
 					"url": "http://localhost:3333/events/3",
@@ -211,7 +291,7 @@
 						},
 						{
 							"name": "Date",
-							"value": "Sat, 24 Oct 2020 13:52:40 GMT"
+							"value": "Sat, 24 Oct 2020 15:21:19 GMT"
 						},
 						{
 							"name": "Connection",
@@ -233,15 +313,15 @@
 					"dns": -1,
 					"connect": -1,
 					"send": 0,
-					"wait": 3.7239999999999998,
+					"wait": 3.359,
 					"receive": 0,
 					"ssl": -1
 				},
 				"comment": "GET SINGLE EVENT"
 			},
 			{
-				"startedDateTime": "2020-10-24T13:55:27.637Z",
-				"time": 33.591,
+				"startedDateTime": "2020-10-24T16:06:45.251Z",
+				"time": 7.05,
 				"request": {
 					"method": "POST",
 					"url": "http://localhost:3333/events/",
@@ -251,12 +331,16 @@
 						{
 							"name": "Content-Type",
 							"value": "application/json"
+						},
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJwYXNzd29yZCI6ImFkbWluIiwiaWF0IjoxNjAzNTUyODA4fQ.ohyw-NaEpzFAYj8mPyH7L_DfV7OWXVn90YdS5wy7ZIY"
 						}
 					],
 					"queryString": [],
 					"postData": {
 						"mimeType": "application/json",
-						"text": "{\n\t\"email\":\"admin@admin.com\",\n\t\"password\":\"admin\",\n  \"id\": 1,\n  \"title\": \"24 Festival de Cine para Niños y Jóvenes – Divercine\",\n  \"eventImage\": \"http://www.cartelera.com.uy/imagenes_espectaculos/moviedetail13/17511.jpg\",\n  \"description\": \"Del lunes 27 de julio al sábado 1º de agosto se desarrolla en el Auditorio del SODRE Nelly Goitiño (18 de Julio y Rio Branco) el 24 Festival de Cine para Niños y Jóvenes - Divercine. La programación, que incluye películas de largo, medio y cortometraje de varias partes del mundo, está dividida en tres franjas de horarios cada día, de acuerdo a las edades del público a las que van dirigidas: a las 13 horas a partir de 3 años de edad; a las 14 horas a partir de los 6 años de edad; y desde las 15 se programan los medio y largometrajes para niños más grandes y adolescentes.\",\n  \"dates\": [\n    {\n\t\t\t\"event_date\":\"07/27/2015\",\n\t\t\t\"event_time\":\"13:00\"\n\t\t},\n\t\t{\n\t\t\t\"event_date\":\"07/28/2015\",\n\t\t\t\"event_time\":\"13:00\"\n\t\t},\n\t\t{\n\t\t\t\"event_date\":\"07/29/2015\",\n\t\t\t\"event_time\":\"13:00\"\n\t\t},\n\t\t{\n\t\t\t\"event_date\":\"07/30/2015\",\n\t\t\t\"event_time\":\"13:00\"\n\t\t},\n\t\t{\n\t\t\t\"event_date\":\"07/1/2015\",\n\t\t\t\"event_time\":\"13:00\"\n\t\t}\n  ],\n  \"location\": \"Auditorio del SODRE\"\n}",
+						"text": "{\n  \"id\": 1,\n  \"title\": \"24 Festival de Cine para Niños y Jóvenes – Divercine\",\n  \"eventImage\": \"http://www.cartelera.com.uy/imagenes_espectaculos/moviedetail13/17511.jpg\",\n  \"description\": \"Del lunes 27 de julio al sábado 1º de agosto se desarrolla en el Auditorio del SODRE Nelly Goitiño (18 de Julio y Rio Branco) el 24 Festival de Cine para Niños y Jóvenes - Divercine. La programación, que incluye películas de largo, medio y cortometraje de varias partes del mundo, está dividida en tres franjas de horarios cada día, de acuerdo a las edades del público a las que van dirigidas: a las 13 horas a partir de 3 años de edad; a las 14 horas a partir de los 6 años de edad; y desde las 15 se programan los medio y largometrajes para niños más grandes y adolescentes.\",\n  \"dates\": [\n    {\n\t\t\t\"event_date\":\"07/27/2015\",\n\t\t\t\"event_time\":\"13:00\"\n\t\t},\n\t\t{\n\t\t\t\"event_date\":\"07/28/2015\",\n\t\t\t\"event_time\":\"13:00\"\n\t\t},\n\t\t{\n\t\t\t\"event_date\":\"07/29/2015\",\n\t\t\t\"event_time\":\"13:00\"\n\t\t},\n\t\t{\n\t\t\t\"event_date\":\"07/30/2015\",\n\t\t\t\"event_time\":\"13:00\"\n\t\t},\n\t\t{\n\t\t\t\"event_date\":\"07/1/2015\",\n\t\t\t\"event_time\":\"13:00\"\n\t\t}\n  ],\n  \"location\": \"Auditorio del SODRE\"\n}",
 						"params": []
 					},
 					"headersSize": -1,
@@ -283,15 +367,15 @@
 						},
 						{
 							"name": "Content-Length",
-							"value": "1058"
+							"value": "1059"
 						},
 						{
 							"name": "ETag",
-							"value": "W/\"422-6++7sUW5S06+HD9vH2m8pGx6guQ\""
+							"value": "W/\"423-Fa/qXh28bVp1wHbAhJVuemX6vMk\""
 						},
 						{
 							"name": "Date",
-							"value": "Sat, 24 Oct 2020 13:37:22 GMT"
+							"value": "Sat, 24 Oct 2020 15:21:37 GMT"
 						},
 						{
 							"name": "Connection",
@@ -299,9 +383,9 @@
 						}
 					],
 					"content": {
-						"size": 1058,
+						"size": 1059,
 						"mimeType": "application/json; charset=utf-8",
-						"text": "{\"id\":5,\"title\":\"24 Festival de Cine para Niños y Jóvenes – Divercine\",\"description\":\"Del lunes 27 de julio al sábado 1º de agosto se desarrolla en el Auditorio del SODRE Nelly Goitiño (18 de Julio y Rio Branco) el 24 Festival de Cine para Niños y Jóvenes - Divercine. La programación, que incluye películas de largo, medio y cortometraje de varias partes del mundo, está dividida en tres franjas de horarios cada día, de acuerdo a las edades del público a las que van dirigidas: a las 13 horas a partir de 3 años de edad; a las 14 horas a partir de los 6 años de edad; y desde las 15 se programan los medio y largometrajes para niños más grandes y adolescentes.\",\"eventImage\":\"http://www.cartelera.com.uy/imagenes_espectaculos/moviedetail13/17511.jpg\",\"location\":\"Auditorio del SODRE\",\"dates\":[{\"event_date\":\"07/27/2015\",\"event_time\":\"13:00\"},{\"event_date\":\"07/28/2015\",\"event_time\":\"13:00\"},{\"event_date\":\"07/29/2015\",\"event_time\":\"13:00\"},{\"event_date\":\"07/30/2015\",\"event_time\":\"13:00\"},{\"event_date\":\"07/1/2015\",\"event_time\":\"13:00\"}]}"
+						"text": "{\"id\":12,\"title\":\"24 Festival de Cine para Niños y Jóvenes – Divercine\",\"description\":\"Del lunes 27 de julio al sábado 1º de agosto se desarrolla en el Auditorio del SODRE Nelly Goitiño (18 de Julio y Rio Branco) el 24 Festival de Cine para Niños y Jóvenes - Divercine. La programación, que incluye películas de largo, medio y cortometraje de varias partes del mundo, está dividida en tres franjas de horarios cada día, de acuerdo a las edades del público a las que van dirigidas: a las 13 horas a partir de 3 años de edad; a las 14 horas a partir de los 6 años de edad; y desde las 15 se programan los medio y largometrajes para niños más grandes y adolescentes.\",\"eventImage\":\"http://www.cartelera.com.uy/imagenes_espectaculos/moviedetail13/17511.jpg\",\"location\":\"Auditorio del SODRE\",\"dates\":[{\"event_date\":\"07/27/2015\",\"event_time\":\"13:00\"},{\"event_date\":\"07/28/2015\",\"event_time\":\"13:00\"},{\"event_date\":\"07/29/2015\",\"event_time\":\"13:00\"},{\"event_date\":\"07/30/2015\",\"event_time\":\"13:00\"},{\"event_date\":\"07/1/2015\",\"event_time\":\"13:00\"}]}"
 					},
 					"redirectURL": "",
 					"headersSize": -1,
@@ -313,14 +397,14 @@
 					"dns": -1,
 					"connect": -1,
 					"send": 0,
-					"wait": 33.591,
+					"wait": 7.05,
 					"receive": 0,
 					"ssl": -1
 				},
 				"comment": "CREATE EVENT w/ auth"
 			},
 			{
-				"startedDateTime": "2020-10-24T13:55:27.637Z",
+				"startedDateTime": "2020-10-24T16:06:45.251Z",
 				"time": 5.163,
 				"request": {
 					"method": "DELETE",
@@ -388,7 +472,7 @@
 				"comment": "DELETE EVENT"
 			},
 			{
-				"startedDateTime": "2020-10-24T13:55:27.637Z",
+				"startedDateTime": "2020-10-24T16:06:45.251Z",
 				"time": 2.4610000000000003,
 				"request": {
 					"method": "PUT",
