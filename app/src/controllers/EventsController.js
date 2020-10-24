@@ -113,8 +113,8 @@ async function getDatesForEachEvent(event)
 async function getEvents(page)
 {
   return await connection("events")
-  .limit(10)
-  .offset((page - 1) * 10)
+  .limit(5)
+  .offset((page - 1) * 5)
   .select(
     "events.id",
     "events.title",
